@@ -1,0 +1,22 @@
+places =
+
+[{"placeName":"University of California, Berkeley","descrip":"#1 Best College in 2021","latitude":37.8719158,"longitude":-122.2585399},
+{"placeName":"Yale University","descrip":"#2 Best College in 2021","latitude":41.3163402,"longitude":-72.9310979},
+{"placeName":"Princeton University","descrip":"#3 Best College in 2021","latitude":40.3448054,"longitude":-74.7098525},
+{"placeName":"Stanford University","descrip":"#4 Best College in 2021","latitude":37.4274912,"longitude":-122.1784738},
+{"placeName":"Columbia University","descrip":"#5 Best College in 2021","latitude":40.8071821,"longitude":-73.9708725},
+{"placeName":"Massachusetts Institute of Technology","descrip":"#6 Best College in 2021","latitude":42.3601065,"longitude":-71.0963487},
+{"placeName":"Harvard University","descrip":"#7 Best College in 2021","latitude":42.3569828,"longitude":-71.1275781},
+{"placeName":"University of California, Los Angeles","descrip":"#8 Best College in 2021","latitude":34.0689385,"longitude":-118.4539359},
+{"placeName":"University of Pennsylvania","descrip":"#9 Best College in 2021","latitude":39.9522349,"longitude":-75.2019685},
+{"placeName":"Northwestern University","descrip":"#10 Best College in 2021","latitude":42.0541757,"longitude":-87.6822484},
+{"placeName":"Dartmouth College","descrip":"#11 Best College in 2021","latitude":43.7044558,"longitude":-72.2974483},
+{"placeName":"Duke University","descrip":"#12 Best College in 2021","latitude":36.0007109,"longitude":-78.9483257},
+{"placeName":"Cornell University","descrip":"#13 Best College in 2021","latitude":42.4654025,"longitude":-76.5258177},
+{"placeName":"Vanderbilt University","descrip":"#14 Best College in 2021","latitude":36.1444284,"longitude":-86.8099971},
+{"placeName":"University of California, San Diego","descrip":"#15 Best College in 2021","latitude":32.7947525,"longitude":-117.2742517},
+{"placeName":"Amherst College","descrip":"#16 Best College in 2021","latitude":42.3709259,"longitude":-72.5257576},
+{"placeName":"University of Southern California","descrip":"#17 Best College in 2021","latitude":34.0223694,"longitude":-118.2938718},
+{"placeName":"Williams College","descrip":"#18 Best College in 2021","latitude":42.7128997,"longitude":-73.2118943},
+{"placeName":"Pomona College","descrip":"#19 Best College in 2021","latitude":34.0977858,"longitude":-117.7206385},
+{"placeName":"University of California, Davis","descrip":"#20 Best College in 2021","latitude":38.5382487,"longitude":-121.7704673}]

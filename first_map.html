@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> My Childhood </title>
+
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body>
+<article>
+
+  <h1>My Childhood Home</h1>
+
+
+<div id="map1"></div>
+
+
+
+<!-- bottom of your page, above the </body> tag (which is followed by the </html> tag -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+
+<script> //write the JavaScript for your map
+
+let map = L.map('map1').setView([10.431173, -66.823820], 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/sabriveit/ckw3r798n13pn16o4bwhnxk3c/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2Ficml2ZWl0IiwiYSI6ImNrdzNyMzRhZTBwdnEydm1tazU5cDk5MGEifQ.-3VtP4s1ThLRJm5ybeqBnA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 15
+}).addTo(map);
+
+let marker1 = L.marker([10.4345766,-66.8373961]).addTo(map);
+marker1.bindPopup("<b>Instituto Andes</b><br>This is my childhood school.").openPopup();
+let marker2 = L.marker([10.4223581,-66.8130427]).addTo(map);
+marker2.bindPopup("<b>Club La Lagunita</b><br>This is where I spent my weekends.").openPopup();
+let marker3 = L.marker([10.4401608,-66.8416099]).addTo(map);
+marker3.bindPopup("<b>Sports Center Los Narajos</b><br>This is where I learned to swim.").openPopup();
+let marker4 = L.marker([10.4400922,-66.8371438]).addTo(map);
+marker4.bindPopup("<b>Galeria Los Naranjos</b><br>My mom used to own her own store in this mall.").openPopup();
+
+</script>
+
+<div id=text> This map was created by Sabrina Veit. It illustrates some key locations where she spent most of her childhood in. She lived in Caracas, Venezuela until she was 10 years old.</div>
+</article>
+</body>
+
+</html>

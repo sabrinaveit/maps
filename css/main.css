@@ -1,0 +1,57 @@
+#map1 {
+  height: 300px;
+  width: 100%;
+  margin-top: 1.5rem;
+  border: 1px solid #999;
+}
+
+#map2 {
+  height: 350px;
+  width: 100%;
+  margin-top: 1.5rem;
+  border: 1px solid #999;
+}
+
+article {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+ margin: auto;
+ color: #123C69;
+ font-size: 25px;
+}
+
+body {
+  background-color: #cae9f5;
+    font-size: 18px;
+}
+
+#text {
+  max-width: 550px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+
+@media screen and (max-width: 380px) {
+ #map1 {
+  height: 350px;
+}
+
+#map2 {
+  height: 380px;
+}
+
+article {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  font-size: 15px;
+}
+
+}

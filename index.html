@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Best Colleges in the United States </title>
+
+
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body>
+<article>
+
+  <h1>Top 20 Colleges in the U.S.</h1>
+
+
+<div id="map2"></div>
+
+<script src="js/places.js"> </script>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+
+<script> //write the JavaScript for your map
+
+let map = L.map('map2').setView([36.554396, -96.763785], 3.2);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/sabriveit/ckw3r798n13pn16o4bwhnxk3c/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2Ficml2ZWl0IiwiYSI6ImNrdzNyMzRhZTBwdnEydm1tazU5cDk5MGEifQ.-3VtP4s1ThLRJm5ybeqBnA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 15
+}).addTo(map);
+
+for ( let i = 0; i < places.length; i++ ) {
+  L.marker( [ places[i].latitude, places[i].longitude ])
+  .bindPopup( '<h3>' + places[i].placeName + '</h3>' + '<p>' + places[i].descrip + '<p>')
+  .addTo( map );
+}
+
+</script>
+
+<p> <b> Source: </b> <a href="https://www.forbes.com/top-colleges/"> Forbes: America's Top Colleges 2021 </a> </p>
+
+ <div id=text> This map was created by Sabrina Veit. It illustrates the Top 20 colleges in the United States for the year 2021. It is the first time a public college is ranked as number 1. The map makes it very user-friendly to view the Top 20 colleges while viewing where they are located. </div>
+
+</article>
+</body>
+
+</html>
